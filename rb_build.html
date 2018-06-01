@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Review Assignment
+
+      Red Ball Pizza Building Form
+      Author: Zachary Binder
+      Date: 6/1/18
+
+      Filename:   rb_build.html
+
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Red Ball Pizza Build a Pizza</title>
+   <link href="css/rb_base.css" rel="stylesheet" />
+   <link href="css/rb_styles2.css" rel="stylesheet" />
+   <link href="css/rb_forms2.css" rel="stylesheet" >
+   <script src="rb_formsubmit2.js"></script>
+</head>
+
+<body>
+   <header>
+      <img src="images/rb_logo2.png" alt="Red Ball Pizza" id="images/logoimg" />
+      <nav> <a id="navicon" href="#"><img src="images/rb_navicon2.png" alt="" /></a>
+         <ul>
+            <li><a href="rb_survey.html">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">directions</a></li>
+            <li><a href="#">coupons</a></li>
+            <li><a href="rb_customer.html">orders</a></li>
+            <li><a href="rb_build.html">build-a-pizza</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section>
+      <h1>Build your Pizza</h1>
+      <p>Everyone has their own pizza preferences. Build your special pizza
+         by selecting from the ingredients below. You can divide your pizza
+         into two regions to give your friends a wide choice of toppings
+         and flavors.</p>
+         <form action="http://www.example.com/redball/build" method="post">
+           <div>
+              <label for="quantityBox">Quantity</label>
+              <input name="pizzaQuantity" id="quantityBox" value="1" step="1" max="10" min="1" type="number">
+           </div> 
+
+           <div>
+               <img src="images/rb_sizes.png" alt="pizza sizes">
+               <label for="sizeBox">Pizza Size</label>
+               <input type="range" name="pizzaSize" id="sizeBox" value="14" step="2" max="16" min="10">  
+           </div>
+
+           <div>
+              <label for="pizzaCrust">Pizza Crust</label>
+                  <select for="pizzaCrust" id="crustBox">
+                     <option value="Thin">Thin</option>
+                     <option value="Thick">Thick</option>
+                     <option value="Stuffed">Stuffed</option>
+                     <option value="Pan">Pan</option>
+                  </select> 
+           </div>
+
+           <div>
+               <input name="doubleCheese" id="cheeseBox" type="checkbox">
+               <label for="doubleCheese">Double Cheese</label>
+          
+               <input type="checkbox" name="doubleSauce" id="sauceBox">
+               <label for="doubleSauce">Double Sauce</label>
+            </div>
+
+            <fieldset>
+               <legend>Meat Toppings</legend>
+               <div>
+                  <fieldset>
+                     <label for="location">Location</label> 
+                     <img src="images/rb_full.png"> 
+                     <img src="images/rb_left.png"> 
+                     <img src="images/rb_right.png"> 
+                     <img src="images/rb_none.png">
+                  </fieldset>
+               </div>
+
+               <div>
+                  <fieldset>
+                     <label>Pepperoni</label>
+                     <input name="Pepperoni" id="full" type="radio">
+                     <input type="radio" name="Pepperoni" id="left">
+                     <input type="radio" name="Pepperoni" id="right">
+                     <input type="radio" name="Pepperoni" id="none">
+                  </fieldset>
+               </div>
+      
+               <div>   
+                  <fieldset>
+                     <label>Ham</label>
+                     <input name="ham" id="full" type="radio">
+                     <input type="radio" name="ham" id="left">
+                     <input type="radio" name="ham" id="right">
+                     <input type="radio" name="ham" id="none">
+                  </fieldset>
+               </div>
+               
+               <div>   
+                  <fieldset>
+                     <label>Pork</label>
+                     <input name="Pork" id="full" type="radio">
+                     <input type="radio" name="Pork" id="left">
+                     <input type="radio" name="Pork" id="right">
+                     <input type="radio" name="Pork" id="none">
+                  </fieldset>
+               </div>
+
+               <div>   
+                  <fieldset>
+                     <label>Sausage</label>
+                     <input name="Sausage" id="full" type="radio">
+                     <input type="radio" name="Sausage" id="left">
+                     <input type="radio" name="Sausage" id="right">
+                     <input type="radio" name="Sausage" id="none">
+                  </fieldset>
+               </div>
+
+               <div>   
+                  <fieldset>
+                     <label>Chicken</label>
+                     <input name="Chicken" id="full" type="radio">
+                     <input type="radio" name="Chicken" id="left">
+                     <input type="radio" name="Chicken" id="right">
+                     <input type="radio" name="Chicken" id="none">
+                  </fieldset>
+               </div>
+
+            </fieldset>
+
+            <fieldset >
+               <legend>Vegitable Toppings</legend>
+               <div>
+                  <fieldset>
+                     <label for="location">Location</label> 
+                     <img src="images/rb_full.png"> 
+                     <img src="images/rb_left.png"> 
+                     <img src="images/rb_right.png"> 
+                     <img src="images/rb_none.png">
+                  </fieldset>
+               </div>
+               
+               <div>   
+                  <fieldset>
+                     <label>Mushroom</label>
+                     <input name="Mushroom" id="full" type="radio">
+                     <input type="radio" name="Mushroom" id="left">
+                     <input type="radio" name="Mushroom" id="right">
+                     <input type="radio" name="Mushroom" id="none">
+                  </fieldset>
+               </div>
+
+               <div>   
+                  <fieldset>
+                     <label>Peppers</label>
+                     <input name="Peppers" id="full" type="radio">
+                     <input type="radio" name="Peppers" id="left">
+                     <input type="radio" name="Peppers" id="right">
+                     <input type="radio" name="Peppers" id="none">
+                  </fieldset>
+               </div>
+
+               <div>   
+                  <fieldset>
+                     <label>Onions</label>
+                     <input name="Onions" id="full" type="radio">
+                     <input type="radio" name="Onions" id="left">
+                     <input type="radio" name="Onions" id="right">
+                     <input type="radio" name="Onions" id="none">
+                  </fieldset>
+               </div>
+
+               <div>  
+                  <fieldset>
+                     <label>Tomatoes</label>
+                     <input name="Tomatoes" id="full" type="radio">
+                     <input type="radio" name="Tomatoes" id="left">
+                     <input type="radio" name="Tomatoes" id="right">
+                     <input type="radio" name="Tomatoes" id="none">
+                  </fieldset>
+               </div>
+
+               <div>
+                  <fieldset>
+                     <label>Jalapenos</label>
+                     <input name="Jalapenos" id="full" type="radio">
+                     <input type="radio" name="Jalapenos" id="left">
+                     <input type="radio" name="Jalapenos" id="right">
+                     <input type="radio" name="Jalapenos" id="none">
+                  </fieldset>
+               </div>
+            
+            </fieldset>
+               
+               <div id="buttons">
+                  <input type="submit" value="Begin Building your Order">
+               </div>
+         </form>
+   </section>
+
+   <footer>
+      <h1>ORDER</h1>
+      <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a> <a href="#">Wings</a> <a href="#">Sides</a> <a href="#">Salads</a> <a href="#">Drinks</a> <a href="#">Desserts</a>
+      <h1>ABOUT US</h1>
+      <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a> <a href="#">School Lunches</a>
+      <h1>CUSTOMER SERVICE</h1>
+      <a href="#">Gluten Free Crusts</a> <a href="#">Contact Us</a> <a href="#">FAQs</a>
+      <h1>MY ACCOUNT</h1>
+      <a href="#">Create an Account</a> <a href="#">Sign In</a> <a href="#">Order Status</a>
+      <h1>NUTRITION</h1>
+      <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
+      <h1>POLICIES</h1>
+      <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+      <address>
+      Red Ball Pizza <br />
+      811 Beach Drive <br />
+      Ormond Beach, FL  32175 <br />
+      (386) 555 - 7499
+      </address>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Review Assignment
+
+   Customer Information Form Style Sheet
+   
+   Author: Zachary Binder
+   Date: 6/1/18
+   
+   Filename: rb_forms2.css
+
+*/
+
+/* Form Layout Styles */
+
+form {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+} 
+
+div {
+   margin: 5px;
+   width: 100%;
+}
+
+legend {
+   color: rgb(255, 200, 200);
+   background-color: rgb(179, 20, 25);
+}
+
+label {
+   display: inline-block;
+   width: 120px;
+}
+
+img[src="images/rb_sizes.png"] {
+   display: block;
+   margin-left: 135px;
+}
+
+fieldset#pickupInfo label, fieldset#deliveryInfo label {
+   margin-bottom: 10px;
+   width: 100%;
+}
+
+textarea {
+   display: block;
+   width: 90%;
+   height: 100px;
+}
+
+input[type="submit"] {
+   height: 50px;
+   width: 200px;
+}
+
+input#sizeBox {
+   width: 240px;
+}
+
+fieldset {
+   display: block;
+   -webkit-margin-start: 2px;
+   -webkit-margin-end: 2px;
+   -webkit-padding-before: 0.35em;
+   -webkit-padding-start: 0.75em;
+   -webkit-padding-end: 0.75em;
+   -webkit-padding-after: 0.625em;
+   min-width: -webkit-min-content;
+
+   -moz-margin-start: 2px;
+   -moz-margin-end: 2px;
+   -moz-padding-before: 0.35em;
+   -moz-padding-start: 0.75em;
+   -moz-padding-end: 0.75em;
+   -moz-padding-after: 0.625em;
+   min-width: -moz-min-content;
+
+   border-width: 0px;
+
+   background-color: rgb(234, 189, 142);
+   flex: 1 1 300px; 
+   margin: 10px;
+
+   -webkit-flex: 1 1 300px;
+   -moz-flex: 1 1 300px;
+}
